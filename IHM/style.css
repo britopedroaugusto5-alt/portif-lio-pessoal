@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #111111;
+    padding: 25px;
+    border-bottom: 1px solid #333333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #888888;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: white;
+}
+
+.pagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 80px;
+}
+
+.subtitulo {
+    width: 100%;
+}
+
+.subtitulo p {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: #aaaaaa;
+}
+
+.foto {
+    text-align: center;
+}
+
+.foto img {
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #444444;
+    border-radius: 10px;
+}
+
+.foto h2 {
+    margin-top: 15px;
+}
+
+.foto p {
+    color: #aaaaaa;
+    margin-top: 10px;
+}
+
+.mim {
+    background-color: #111111;
+    padding: 60px;
+}
+
+.sobre-mim {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+}
+
+.sobre-mim .titulo {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.sobre-mim .linha {
+    width: 60px;
+    height: 3px;
+    background-color: #888888;
+    margin: 0 0 25px 0;
+}
+
+.sobre-mim .texto-sobre {
+    color: #bbbbbb;
+    line-height: 1.8;
+    text-align: left;
+    margin: 0;
+}
+
+.habilidades {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.habilidades .titulo,
+.habilidades .linha {
+    grid-column: 1 / -1;
+}
+
+.titulo {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.linha {
+    width: 60px;
+    height: 3px;
+    background-color: #888888;
+    margin-bottom: 25px;
+}
+
+.habilidade {
+    background-color: #151515;
+    border: 1px solid #333333;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.habilidade h3 {
+    margin-bottom: 12px;
+}
+
+.habilidade p {
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+#projetos {
+    background-color: #111111;
+    padding: 60px;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.conteudo h2,
+.conteudo .linha {
+    grid-column: 1 / -1;
+}
+
+.projeto {
+    background-color: #181818;
+    border: 1px solid #333333;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.projeto h3 {
+    margin-bottom: 12px;
+}
+
+.projeto p {
+    color: #bbbbbb;
+    line-height: 1.6;
+}
+
+#contato {
+    padding: 60px;
+}
+
+#contato h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#contato .linha {
+    width: 60px;
+    height: 3px;
+    background-color: #888888;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+#contato p {
+    color: #aaaaaa;
+    margin-bottom: 25px;
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cccccc;
+}
+
+#contato input,
+#contato textarea {
+    background-color: #151515;
+    color: white;
+    border: 1px solid #444444;
+    padding: 12px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#contato textarea {
+    margin-top: 8px;
+}
+
+#contato input[type="submit"] {
+    background-color: white;
+    color: black;
+    border: none;
+    width: 120px;
+    cursor: pointer;
+}
+
+#contato input[type="submit"]:hover {
+    background-color: #aaaaaa;
+}
+
+footer {
+    background-color: #111111;
+    border-top: 1px solid #333333;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    color: #888888;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .pagina {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .subtitulo {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .mim,
+    #projetos,
+    #contato {
+        padding: 40px 20px;
+    }
+
+    .sobre-mim {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+    .habilidades {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+}
