@@ -15,7 +15,7 @@ A proposta é apresentar uma interface moderna, intuitiva e organizada, proporci
 
 ## Estrutura do Projeto
 
-- **ihm.html:** arquivo responsável pela estrutura principal da página.
+- **index.html:** arquivo responsável pela estrutura principal da página.
 - **style.css:** arquivo responsável pela estilização e aparência visual do site.
 - **Imagem/:** pasta destinada ao armazenamento das imagens utilizadas no portfólio.
 
@@ -31,7 +31,7 @@ A proposta é apresentar uma interface moderna, intuitiva e organizada, proporci
 
 Acesse o portfólio online:
 
-[**Visualizar Portfólio Pessoal**](https://britopedroaugusto5-alt.github.io/portif-lio-pessoal/IHM/ihm.html)
+[**Visualizar Portfólio Pessoal**](https://britopedroaugusto5-alt.github.io/portif-lio-pessoal/)
 
 ## Repositório
 
